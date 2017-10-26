@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+        <title> Posicionamiento absoluto </title>
+        
+        <style type="text/css">
+body {
+
+	background: blue;
+}
+        #contenedor /*Elemento padre que contiene los DIV dentro*/
+	       {
+		   width:300px; /* alto del contenedor*/
+		   margin:20px;
+	      }
+
+	    div /*Configuracion de DIV padre color de fondo,margen y separacion entre DIVS*/
+	    {
+
+          background:#6EBBD5;/* Color de fondo de #contenedor (padre) */
+          margin-bottom:20px; /**/
+          padding:20px;/*separacion entre cada DIV independiente*/
+
+         }
+
+
+        #absoluto /*configuracion independiente de posicion absoluta independiente del resto (Elemento #2) declarado independiente del resto */
+         {
+           background:#ff8000;
+    	   position:absolute;/* tipo de posicion */
+    	   bottom: 400px; /* posicion derecha 500 pixeles*/
+    	
+         }
+
+	    </style>
+    </head>
+              
+    <body>
+
+        <div> Elemento #1 </div>
+
+        <div id="absoluto"> Elemento #2 </div>
+
+        <div> Elemento #3 </div>
+
+    </body>
+</html>
